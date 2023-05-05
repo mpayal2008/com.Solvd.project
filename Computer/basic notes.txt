@@ -1,0 +1,5 @@
+Connectivity pot--> added hash map 
+
+power supply-->try catch --> Arithmetic exception
+
+computer-- Connectivity-- Audio Jack---> try catch --> Null pointer exception
