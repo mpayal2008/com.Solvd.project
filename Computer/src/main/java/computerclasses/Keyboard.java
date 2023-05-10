@@ -31,9 +31,11 @@ public class Keyboard extends InputDevices implements IConnection {
 
 		System.out.println("\nEnter data");
 		Scanner sc = new Scanner(System.in);
-		String st = sc.next();
+		//String st = sc.next();
+		String name= "";
+		name+=sc.nextLine();
 		sc.close();
-		return st;
+		return name;
 	}
 
 	@Override

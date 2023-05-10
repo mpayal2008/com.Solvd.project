@@ -28,9 +28,9 @@ public class Monitor extends OutputDevice implements IOutput {
 		responseRate = 0.5f; // protected variable from outputdevice class used
 
 		System.out.println("Output device selected is " + super.getTypeOfOutput() + 
-							" \nold responserate is " + super.responseRate + 
-							" \nnew response rate is " + responseRate + 
-							"\n ScreenType is " + getScreenType());
+							" old responserate is " + super.responseRate + 
+							" new response rate is " + responseRate + 
+							" ScreenType is " + getScreenType());
 		return null;
 	}
 

@@ -33,6 +33,9 @@ public class Configurations {
 	    public Configurations getNext() {
 	        return next;
 	    }
+	    
+	    
+	    
 	}
 	
 

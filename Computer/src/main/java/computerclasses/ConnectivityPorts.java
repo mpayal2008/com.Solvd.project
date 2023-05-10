@@ -4,9 +4,12 @@ package computerclasses;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 public class ConnectivityPorts  {
-	
+	private static  Logger LOGGER = LogManager.getLogger(Computer.class);
 	protected ConnectivityPorts(String device)
 	{
 		Map<Integer, String> dev1= new HashMap<>();
@@ -20,7 +23,7 @@ public class ConnectivityPorts  {
                 Integer key = e.getKey();
                 Object value2 = e.getValue();
                 if ((value2.toString()).equalsIgnoreCase(device)) {
-                   System.out.println("Port no for "+device+" is "+key);
+                	LOGGER.info("Port no for "+device+" is "+key);
                 }
             }
         }	

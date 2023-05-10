@@ -17,7 +17,7 @@ public class Printer  extends OutputDevice implements IOutput{
 
 	@Override
 	public void printPage() {
-		System.out.println("/n/nprinter/n/n");
+		System.out.println("\nPrinter\n");
 		
 	}
 

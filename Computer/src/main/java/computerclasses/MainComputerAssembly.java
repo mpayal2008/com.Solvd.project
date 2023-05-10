@@ -1,8 +1,8 @@
 package computerclasses;
 
-import types.Types;
 
-public class MainComputerAssembly extends Types {
+
+public class MainComputerAssembly {
 
 	public static int a=10;
 	int j=10;
@@ -13,6 +13,7 @@ public class MainComputerAssembly extends Types {
 		return add;
 	}
 	
+
 	static {
 		System.out.println("STATIC BLOCK CALLED FROM MAIN COMP ASSEMBLY");
 	}
