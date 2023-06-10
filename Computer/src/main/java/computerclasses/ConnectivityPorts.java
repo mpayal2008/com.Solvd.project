@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 
 public class ConnectivityPorts  {
-	private static  Logger LOGGER = LogManager.getLogger(Computer.class);
+	private static  Logger LOGGER = LogManager.getLogger(MainComputer.class);
 	protected ConnectivityPorts(String device)
 	{
 		Map<Integer, String> dev1= new HashMap<>();

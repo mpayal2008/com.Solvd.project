@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import interfacecomp.InputInterface;
 
 abstract class InputDevices implements InputInterface {
-	private static  Logger LOGGER = LogManager.getLogger(Computer.class);
+	private static  Logger LOGGER = LogManager.getLogger(MainComputer.class);
 	
 	protected InputDevices() {
 		LOGGER.info("InputDevice Constructor");
