@@ -7,19 +7,19 @@ import types.Configurations;
 
 import org.apache.commons.lang3.StringUtils;
 
-public class Computer {
+public class MainComputer {
 
-	private static  Logger LOGGER = LogManager.getLogger(Computer.class);
+	private static  Logger LOGGER = LogManager.getLogger(MainComputer.class);
 
 	public static void main(String[] args) throws Exception {
 
 		LOGGER.info("\n\n------------CONNECTIVITY PORTS-----------\n");
 
-	/*	ConnectivityPorts cps = new ConnectivityPorts("Audio Jack");			 /// HASHMAP USED
+/*		ConnectivityPorts cps = new ConnectivityPorts("Audio Jack");			 /// HASHMAP USED
 		USB usb = new USB("Flash Drive ");
 		usb.setSize(1000);
 		usb.connectionType();
-	*/
+	
 		PowerSupply poweroutlet = new PowerSupply("Power Supply");
 		poweroutlet.isConnectionActive(false); 									// in PowerSupply class Arithmetic Exception
 
@@ -33,7 +33,7 @@ public class Computer {
 		Bluetooth bluetooth = new Bluetooth("B");
 		bluetooth.setName("Apple");
 		String name = bluetooth.getName();
-
+*/
 		LOGGER.info("\n\n------------Input Device-----------\n");
 
 		Keyboard keyboard = new Keyboard();
@@ -54,7 +54,7 @@ public class Computer {
 		mouse.setClickLeftPref(true);
 
 		mouse.setInputAction();
-*/
+
 		LOGGER.info("\n\n------------Output Device-----------\n");
 
 		OutputDevice output = new Monitor("a");
@@ -67,16 +67,16 @@ public class Computer {
 
 		LOGGER.info(monitor.OutputDevice("Type"));							//Error- Printing previous logger message after this
 		
-	//	System.out.println(monitor.OutputDevice("Type"));
-		
-		String upper = StringUtils.upperCase(string);
-		System.out.println("Uppercase string: " + upper);						/// StringUtil method
-		
-		
-		LOGGER.debug(monitor.displayOutput(upper));
 
-	//	Printer print = new Printer("printer");
-	//	print.printPage();
+*/		
+		String upper = StringUtils.upperCase(string);
+		LOGGER.info("Uppercase string: " + upper);						/// StringUtil method
+		
+		
+/*		LOGGER.debug(monitor.displayOutput(upper));
+
+		Printer print = new Printer("printer");
+		print.printPage();
 
 		LOGGER.info("\n\n------------HardDisk-----------\n");
 
@@ -86,7 +86,7 @@ public class Computer {
 		hdisk.setSize(100);
 		memSize = hdisk.getSize();
 		System.out.println("HardDisk size is " + memSize);
-
+*/
 		LOGGER.info("\n\n-----------------Types of computer package----------\n");
 
 		Configurations head = new Configurations("Dell", 8, 512);						
@@ -103,13 +103,13 @@ public class Computer {
 			current = current.getNext();
 		}
 
-		LOGGER.info("\n\n---------Comp Assembly---------------\n");
+/*		LOGGER.info("\n\n---------Comp Assembly---------------\n");
 		MainComputerAssembly m1 = new MainComputerAssembly();						 // PROTECTED METHOD CALLED FROM OTHER PACKAGE
 		LOGGER.debug(m1.add(10));
 
 		FinalClassCheckPort cp1 = new FinalClassCheckPort();						 // FINAL CLASS CALLED
 		LOGGER.debug(cp1.isOn(true));
-
+*/
 	}
 
 }

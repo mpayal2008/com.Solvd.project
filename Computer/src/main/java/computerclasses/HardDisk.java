@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 public class HardDisk  {
 
-private static  Logger LOGGER = LogManager.getLogger(Computer.class);
+private static  Logger LOGGER = LogManager.getLogger(MainComputer.class);
 	
 	
 private char type;
@@ -35,7 +35,7 @@ public void setSize(int size) throws Exception {
 	}
 	else {
 		LOGGER.info("Invalid Size. Valid Range is 200-1000");
-	//	throw new Exception ("Invalid Size. Valid Range is 200-1000");		///THROW EXCEPTION
+	// throw new Exception ("Invalid Size. Valid Range is 200-1000");		///THROW EXCEPTION
 		
 	}
 }
